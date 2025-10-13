@@ -1,4 +1,7 @@
 import { createCallerFactory, createTRPCRouter } from "~/server/api/trpc";
+import { abstractMachineRouter } from "./routers/abstract-machine/abstractMachine";
+import { usersAbstractMachineRouter } from "./routers/abstract-machine/usersAbstractMachine";
+import { snapshotRouter } from "./routers/abstract-machine/snapshot";
 
 /**
  * This is the primary router for your server.
@@ -6,6 +9,9 @@ import { createCallerFactory, createTRPCRouter } from "~/server/api/trpc";
  * All routers added in /api/routers should be manually added here.
  */
 export const appRouter = createTRPCRouter({
+    abstractMachine: abstractMachineRouter,
+    usersAbstractMachine: usersAbstractMachineRouter,
+    snapshot: snapshotRouter
 });
 
 // export type definition of API
