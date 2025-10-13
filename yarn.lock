@@ -3122,6 +3122,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"isomorphic.js@npm:^0.2.4":
+  version: 0.2.5
+  resolution: "isomorphic.js@npm:0.2.5"
+  checksum: 10c0/7cd268c8e58146a8160c8cd16596291fd1fbf3e8799a325f269accda9dc1238806e371ccef0b66fe2ad957209230c55997248d8b6d02cf2d7c575ffeb759c789
+  languageName: node
+  linkType: hard
+
 "iterator.prototype@npm:^1.1.4":
   version: 1.1.5
   resolution: "iterator.prototype@npm:1.1.5"
@@ -3253,6 +3260,19 @@ __metadata:
     prelude-ls: "npm:^1.2.1"
     type-check: "npm:~0.4.0"
   checksum: 10c0/effb03cad7c89dfa5bd4f6989364bfc79994c2042ec5966cb9b95990e2edee5cd8969ddf42616a0373ac49fac1403437deaf6e9050fbbaa3546093a59b9ac94e
+  languageName: node
+  linkType: hard
+
+"lib0@npm:^0.2.99":
+  version: 0.2.114
+  resolution: "lib0@npm:0.2.114"
+  dependencies:
+    isomorphic.js: "npm:^0.2.4"
+  bin:
+    0ecdsa-generate-keypair: bin/0ecdsa-generate-keypair.js
+    0gentesthtml: bin/gentesthtml.js
+    0serve: bin/0serve.js
+  checksum: 10c0/3edaebb4ac80da164dfc097720a610bba4d08f44dc60ecb186aa42924d8e67679c12a6b7415eaffc07c47f1fbddccb15fd925bee7745c7aef16ab1a1e0a3cdc0
   languageName: node
   linkType: hard
 
@@ -4716,6 +4736,7 @@ __metadata:
     tailwindcss: "npm:^4.0.15"
     typescript: "npm:^5.8.2"
     typescript-eslint: "npm:^8.27.0"
+    yjs: "npm:^13.6.27"
     zod: "npm:^3.24.2"
   languageName: unknown
   linkType: soft
@@ -5125,6 +5146,15 @@ __metadata:
   version: 5.0.0
   resolution: "yallist@npm:5.0.0"
   checksum: 10c0/a499c81ce6d4a1d260d4ea0f6d49ab4da09681e32c3f0472dee16667ed69d01dae63a3b81745a24bd78476ec4fcf856114cb4896ace738e01da34b2c42235416
+  languageName: node
+  linkType: hard
+
+"yjs@npm:^13.6.27":
+  version: 13.6.27
+  resolution: "yjs@npm:13.6.27"
+  dependencies:
+    lib0: "npm:^0.2.99"
+  checksum: 10c0/f89520fed12816f9e56db0626189e39c9b913e51d24233c3190ceadee9913fc013f438b7cd0a945f2c151ab76e7474eca9d95631e32fdbe581b151ad14afeaae
   languageName: node
   linkType: hard
 
